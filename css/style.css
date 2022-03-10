@@ -1,0 +1,60 @@
+.box {
+  height: 200px;
+}
+
+#noir {
+  background: #222;
+  border: 15px solid #000;
+}
+
+#vert {
+  background: #292;
+  border: 15px solid #070;
+}
+
+#rouge {
+  background: #922;
+  border: 15px solid #700;
+}
+
+#bleu {
+  background: #229;
+  border: 15px solid #007;
+}
+
+@media screen and (min-width:600px) {
+  body {
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .box {
+    width:50%;
+  }
+
+  #vert {
+    order:-1;
+  }
+
+}
+
+@media screen and (min-width:900px) {
+  body {
+    flex-wrap:nowrap;
+  }
+
+  #noir {
+    display:none;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  #noir {
+    display:block;
+  }
+  #vert {
+    order:0;
+  }
+
+}
